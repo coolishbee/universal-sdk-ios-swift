@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC35F9AF27D1C366007D0A84 /* UniversalSDKSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = AC35F9AE27D1C366007D0A84 /* UniversalSDKSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACC87D7927E438F5007B2123 /* UniversalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC87D7827E438F5007B2123 /* UniversalAPI.swift */; };
+		ACEDCD7228091700007B6D57 /* UniversalAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDCD7128091700007B6D57 /* UniversalAPIConfiguration.swift */; };
+		ACEDCD7428091712007B6D57 /* UniversalAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDCD7328091712007B6D57 /* UniversalAPIClient.swift */; };
+		ACEDCD76280917C9007B6D57 /* LoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDCD75280917C9007B6D57 /* LoginType.swift */; };
+		ACEDCD7828091879007B6D57 /* UniversalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDCD7728091879007B6D57 /* UniversalUtils.swift */; };
+		BFD78EF33ED7A3168CF0D973 /* Pods_UniversalSDKSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C37474D56879D7E1E8A152 /* Pods_UniversalSDKSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		291C04A92DAC77F41953CA75 /* Pods-UniversalSDKSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalSDKSwift.debug.xcconfig"; path = "Target Support Files/Pods-UniversalSDKSwift/Pods-UniversalSDKSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		33C37474D56879D7E1E8A152 /* Pods_UniversalSDKSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalSDKSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC35F9AB27D1C366007D0A84 /* UniversalSDKSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UniversalSDKSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC35F9AE27D1C366007D0A84 /* UniversalSDKSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniversalSDKSwift.h; sourceTree = "<group>"; };
+		ACC87D7827E438F5007B2123 /* UniversalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPI.swift; sourceTree = "<group>"; };
+		ACEDCD7128091700007B6D57 /* UniversalAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPIConfiguration.swift; sourceTree = "<group>"; };
+		ACEDCD7328091712007B6D57 /* UniversalAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPIClient.swift; sourceTree = "<group>"; };
+		ACEDCD75280917C9007B6D57 /* LoginType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginType.swift; sourceTree = "<group>"; };
+		ACEDCD7728091879007B6D57 /* UniversalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalUtils.swift; sourceTree = "<group>"; };
+		FF186DBECBE4F227C9AF45D7 /* Pods-UniversalSDKSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalSDKSwift.release.xcconfig"; path = "Target Support Files/Pods-UniversalSDKSwift/Pods-UniversalSDKSwift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC35F9A827D1C366007D0A84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD78EF33ED7A3168CF0D973 /* Pods_UniversalSDKSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D92E41F2154FCB54D8B8FC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				291C04A92DAC77F41953CA75 /* Pods-UniversalSDKSwift.debug.xcconfig */,
+				FF186DBECBE4F227C9AF45D7 /* Pods-UniversalSDKSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		97093433DAE7FDEB8DAF21C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33C37474D56879D7E1E8A152 /* Pods_UniversalSDKSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC35F9A127D1C365007D0A84 = {
+			isa = PBXGroup;
+			children = (
+				AC35F9AD27D1C366007D0A84 /* UniversalSDKSwift */,
+				AC35F9AC27D1C366007D0A84 /* Products */,
+				6D92E41F2154FCB54D8B8FC4 /* Pods */,
+				97093433DAE7FDEB8DAF21C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC35F9AC27D1C366007D0A84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC35F9AB27D1C366007D0A84 /* UniversalSDKSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC35F9AD27D1C366007D0A84 /* UniversalSDKSwift */ = {
+			isa = PBXGroup;
+			children = (
+				ACEDCD7028091673007B6D57 /* Utils */,
+				ACEDCD6F28091668007B6D57 /* Login */,
+				ACC87D7727E437E9007B2123 /* API */,
+				AC35F9AE27D1C366007D0A84 /* UniversalSDKSwift.h */,
+			);
+			path = UniversalSDKSwift;
+			sourceTree = "<group>";
+		};
+		ACC87D7727E437E9007B2123 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ACC87D7827E438F5007B2123 /* UniversalAPI.swift */,
+				ACEDCD7128091700007B6D57 /* UniversalAPIConfiguration.swift */,
+				ACEDCD7328091712007B6D57 /* UniversalAPIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ACEDCD6F28091668007B6D57 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ACEDCD7028091673007B6D57 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ACEDCD75280917C9007B6D57 /* LoginType.swift */,
+				ACEDCD7728091879007B6D57 /* UniversalUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AC35F9A627D1C366007D0A84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC35F9AF27D1C366007D0A84 /* UniversalSDKSwift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AC35F9AA27D1C366007D0A84 /* UniversalSDKSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC35F9B227D1C366007D0A84 /* Build configuration list for PBXNativeTarget "UniversalSDKSwift" */;
+			buildPhases = (
+				154E6B4C74FF493739FAA9BD /* [CP] Check Pods Manifest.lock */,
+				AC35F9A627D1C366007D0A84 /* Headers */,
+				AC35F9A727D1C366007D0A84 /* Sources */,
+				AC35F9A827D1C366007D0A84 /* Frameworks */,
+				AC35F9A927D1C366007D0A84 /* Resources */,
+				967EF3DA4307973AE3EAE9DF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniversalSDKSwift;
+			productName = UniversalSDKSwift;
+			productReference = AC35F9AB27D1C366007D0A84 /* UniversalSDKSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC35F9A227D1C365007D0A84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					AC35F9AA27D1C366007D0A84 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = AC35F9A527D1C365007D0A84 /* Build configuration list for PBXProject "UniversalSDKSwift" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC35F9A127D1C365007D0A84;
+			productRefGroup = AC35F9AC27D1C366007D0A84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC35F9AA27D1C366007D0A84 /* UniversalSDKSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC35F9A927D1C366007D0A84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		154E6B4C74FF493739FAA9BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniversalSDKSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		967EF3DA4307973AE3EAE9DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniversalSDKSwift/Pods-UniversalSDKSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniversalSDKSwift/Pods-UniversalSDKSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UniversalSDKSwift/Pods-UniversalSDKSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC35F9A727D1C366007D0A84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEDCD7828091879007B6D57 /* UniversalUtils.swift in Sources */,
+				ACC87D7927E438F5007B2123 /* UniversalAPI.swift in Sources */,
+				ACEDCD76280917C9007B6D57 /* LoginType.swift in Sources */,
+				ACEDCD7428091712007B6D57 /* UniversalAPIClient.swift in Sources */,
+				ACEDCD7228091700007B6D57 /* UniversalAPIConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AC35F9B027D1C366007D0A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC35F9B127D1C366007D0A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AC35F9B327D1C366007D0A84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291C04A92DAC77F41953CA75 /* Pods-UniversalSDKSwift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PRPC4C837N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coolishbee.UniversalSDKSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC35F9B427D1C366007D0A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF186DBECBE4F227C9AF45D7 /* Pods-UniversalSDKSwift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PRPC4C837N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coolishbee.UniversalSDKSwift;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC35F9A527D1C365007D0A84 /* Build configuration list for PBXProject "UniversalSDKSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC35F9B027D1C366007D0A84 /* Debug */,
+				AC35F9B127D1C366007D0A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC35F9B227D1C366007D0A84 /* Build configuration list for PBXNativeTarget "UniversalSDKSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC35F9B327D1C366007D0A84 /* Debug */,
+				AC35F9B427D1C366007D0A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC35F9A227D1C365007D0A84 /* Project object */;
+}
