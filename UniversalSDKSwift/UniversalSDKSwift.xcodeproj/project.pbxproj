@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC35F9AF27D1C366007D0A84 /* UniversalSDKSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = AC35F9AE27D1C366007D0A84 /* UniversalSDKSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC8EF8E8281BAEE5009D7450 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8EF8E7281BAEE5009D7450 /* IAPManager.swift */; };
 		ACC87D7927E438F5007B2123 /* UniversalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC87D7827E438F5007B2123 /* UniversalAPI.swift */; };
 		ACEDCD7228091700007B6D57 /* UniversalAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDCD7128091700007B6D57 /* UniversalAPIConfiguration.swift */; };
 		ACEDCD7428091712007B6D57 /* UniversalAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDCD7328091712007B6D57 /* UniversalAPIClient.swift */; };
@@ -21,6 +22,7 @@
 		33C37474D56879D7E1E8A152 /* Pods_UniversalSDKSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalSDKSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC35F9AB27D1C366007D0A84 /* UniversalSDKSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UniversalSDKSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC35F9AE27D1C366007D0A84 /* UniversalSDKSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniversalSDKSwift.h; sourceTree = "<group>"; };
+		AC8EF8E7281BAEE5009D7450 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		ACC87D7827E438F5007B2123 /* UniversalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPI.swift; sourceTree = "<group>"; };
 		ACEDCD7128091700007B6D57 /* UniversalAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPIConfiguration.swift; sourceTree = "<group>"; };
 		ACEDCD7328091712007B6D57 /* UniversalAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPIClient.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		AC35F9AD27D1C366007D0A84 /* UniversalSDKSwift */ = {
 			isa = PBXGroup;
 			children = (
+				ACF15273281299E7007AA088 /* IAP */,
 				ACEDCD7028091673007B6D57 /* Utils */,
 				ACEDCD6F28091668007B6D57 /* Login */,
 				ACC87D7727E437E9007B2123 /* API */,
@@ -112,6 +115,14 @@
 				ACEDCD7728091879007B6D57 /* UniversalUtils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		ACF15273281299E7007AA088 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				AC8EF8E7281BAEE5009D7450 /* IAPManager.swift */,
+			);
+			path = IAP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8EF8E8281BAEE5009D7450 /* IAPManager.swift in Sources */,
 				ACEDCD7828091879007B6D57 /* UniversalUtils.swift in Sources */,
 				ACC87D7927E438F5007B2123 /* UniversalAPI.swift in Sources */,
 				ACEDCD76280917C9007B6D57 /* LoginType.swift in Sources */,

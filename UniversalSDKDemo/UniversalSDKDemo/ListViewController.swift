@@ -11,7 +11,7 @@ import UniversalSDKSwift
 class ListViewController: UITableViewController {
 
     let kCellIdentifier = "CellIdentifier"
-    let demos = ["SetupSDK", "Google Login", "Facebook Login"]
+    let demos = ["SetupSDK", "Google Login", "Facebook Login", "Apple Login", "InitBilling", "InAppPurchase"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,14 @@ class ListViewController: UITableViewController {
             
             //let viewController = APIScrollViewController()
             //navigationController?.pushViewController(viewController, animated: true)
+        } else if indexPath.row == 3 {
+            print("Apple Login")
+        } else if indexPath.row == 4 {
+            print("Init Billing")
+            UniversalAPIClient.shared.initBilling()
+        } else if indexPath.row == 5 {
+            print("InAppPurchase")
+            UniversalAPIClient.shared.purchaseLaunch()
         }
     }
 

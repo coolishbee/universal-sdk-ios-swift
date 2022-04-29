@@ -51,6 +51,12 @@ public class UniversalAPIClient: NSObject {
                     return
                 }
                 print(user.userID ?? "nil")
+                print(user.profile?.name ?? "nil")
+                print(user.profile?.email ?? "nil")
+                if ((user.profile?.hasImage) != nil) {
+                    let pic = user.profile?.imageURL(withDimension: 100)
+                    print(pic?.absoluteString ?? "nil")
+                }
             }
             break
         case .facebook:
@@ -64,16 +70,42 @@ public class UniversalAPIClient: NSObject {
                     print("Error! \(String(describing: error))")
                     return
                 }
-                guard result == nil, result?.isCancelled == false else {
-                    print("isCancelled")
-                    return
-                }
+
                 guard let accessToken = AccessToken.current else {
                     print("accessToken is null")
                     return
                 }
                             
                 print(accessToken.userID)
+                
+                GraphRequest(graphPath: "me",
+                             parameters: ["fields": "id, name, picture.type(normal), email"]).start(
+                                completion: { (connection, result, error) -> Void in
+                                    guard error == nil else {
+                                        print("Error! \(String(describing: error))")
+                                        return
+                                    }
+                                    
+                                    let parsedData = result as! Dictionary<String, AnyObject>?
+                                    if let email = parsedData?["email"] {
+                                        print("Email: \(email as! String)")
+                                    }
+                                    
+                                    if let dictData: [String: Any] = result as? [String: Any] {
+                                        DispatchQueue.main.async {
+                                            print("email")
+                                            print("name")
+                                            print(dictData["email"]!)
+                                            print(dictData["name"]!)
+                                            
+                                            if let picData: [String: Any] = dictData["picture"] as? [String: Any] {
+                                                if let data: [String: Any] = picData["data"] as? [String: Any] {
+                                                    print(data["url"]!)
+                                                }
+                                            }
+                                        }
+                                    }
+                                })
             }
             break
         case .apple:
@@ -82,6 +114,14 @@ public class UniversalAPIClient: NSObject {
         
         
     }
-        
+    
+    public func initBilling()
+    {
+        IAPManager.shared.setup(pidList: ["inapp1200", "com.gamepub.sdk.inapp1200", "com.gamepub.sdk.inapp2500"])
+    }
+    
+    public func purchaseLaunch() {
+        IAPManager.shared.purchase(productId: "inapp1200")
+    }
 }
 
