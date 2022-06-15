@@ -1,1 +1,2 @@
 github "facebook/facebook-ios-sdk" "v11.2.1"
+github "google/GoogleSignIn-iOS" "6.1.0"

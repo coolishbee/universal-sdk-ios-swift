@@ -35,19 +35,21 @@ class ListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            //API.getTestFunc()
             UniversalAPIClient.shared.setupSDK()
         } else if indexPath.row == 1 {
-            UniversalAPIClient.shared.login(type: LoginType.google,
-                                            viewController: self)
-            //let viewController = APIScrollViewController()
-            //navigationController?.pushViewController(viewController, animated: true)
-        } else if indexPath.row == 2 {
-            UniversalAPIClient.shared.login(type: LoginType.facebook,
-                                            viewController: self)
+            UniversalAPIClient.shared.socialLogin(loginType: .google,
+                                                  inViewController: self) { result, error in
+                guard let result = result else {
+                    print("Error! \(String(describing: error))")
+                    return
+                }
+                let apiVC = APIScrollViewController()
+                apiVC.label.text = result.json
+                self.navigationController?.pushViewController(apiVC, animated: true)
+            }
             
-            //let viewController = APIScrollViewController()
-            //navigationController?.pushViewController(viewController, animated: true)
+        } else if indexPath.row == 2 {
+
         } else if indexPath.row == 3 {
             print("Apple Login")
         } else if indexPath.row == 4 {

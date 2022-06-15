@@ -51,6 +51,19 @@ class IAPManager: NSObject {
             print("Сan't make purchases")
         }
     }
+    
+    func getReceiptCode() -> String {
+//        let receiptURL = Bundle.main.appStoreReceiptURL
+//        let receiptData = try? Data(contentsOf: receiptURL!)
+//        let encodedReceipt = receiptData?.base64EncodedString(options: NSData.Base64EncodingOptions())
+                
+        guard let receiptURL = Bundle.main.appStoreReceiptURL,
+              let receiptString = try? Data(contentsOf: receiptURL).base64EncodedString() else {
+            return "no receipt"
+        }
+        
+        return receiptString
+    }
 }
 
 extension IAPManager: SKProductsRequestDelegate {

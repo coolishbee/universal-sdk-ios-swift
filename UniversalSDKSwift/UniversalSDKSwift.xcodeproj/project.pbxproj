@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC33286328348270002A06F2 /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33286228348270002A06F2 /* LoginResult.swift */; };
+		AC33286528348285002A06F2 /* SDKLoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33286428348285002A06F2 /* SDKLoginResult.swift */; };
+		AC332867283482A2002A06F2 /* LoginProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC332866283482A2002A06F2 /* LoginProfile.swift */; };
 		AC35F9AF27D1C366007D0A84 /* UniversalSDKSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = AC35F9AE27D1C366007D0A84 /* UniversalSDKSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC8EF8E8281BAEE5009D7450 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8EF8E7281BAEE5009D7450 /* IAPManager.swift */; };
+		AC9FD0282829F91900769ABD /* UniversalEnumType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FD0272829F91900769ABD /* UniversalEnumType.swift */; };
+		AC9FD02C2829FCFC00769ABD /* UniversalLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FD02B2829FCFC00769ABD /* UniversalLogin.swift */; };
+		AC9FD030282CBD2800769ABD /* JSONConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FD02F282CBD2800769ABD /* JSONConverter.swift */; };
+		AC9FD036282CDD2500769ABD /* UniversalSDKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FD035282CDD2500769ABD /* UniversalSDKError.swift */; };
 		ACC87D7927E438F5007B2123 /* UniversalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC87D7827E438F5007B2123 /* UniversalAPI.swift */; };
 		ACEDCD7228091700007B6D57 /* UniversalAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDCD7128091700007B6D57 /* UniversalAPIConfiguration.swift */; };
 		ACEDCD7428091712007B6D57 /* UniversalAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDCD7328091712007B6D57 /* UniversalAPIClient.swift */; };
@@ -20,9 +27,16 @@
 /* Begin PBXFileReference section */
 		291C04A92DAC77F41953CA75 /* Pods-UniversalSDKSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalSDKSwift.debug.xcconfig"; path = "Target Support Files/Pods-UniversalSDKSwift/Pods-UniversalSDKSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		33C37474D56879D7E1E8A152 /* Pods_UniversalSDKSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalSDKSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC33286228348270002A06F2 /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		AC33286428348285002A06F2 /* SDKLoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLoginResult.swift; sourceTree = "<group>"; };
+		AC332866283482A2002A06F2 /* LoginProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProfile.swift; sourceTree = "<group>"; };
 		AC35F9AB27D1C366007D0A84 /* UniversalSDKSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UniversalSDKSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC35F9AE27D1C366007D0A84 /* UniversalSDKSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UniversalSDKSwift.h; sourceTree = "<group>"; };
 		AC8EF8E7281BAEE5009D7450 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		AC9FD0272829F91900769ABD /* UniversalEnumType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalEnumType.swift; sourceTree = "<group>"; };
+		AC9FD02B2829FCFC00769ABD /* UniversalLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalLogin.swift; sourceTree = "<group>"; };
+		AC9FD02F282CBD2800769ABD /* JSONConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConverter.swift; sourceTree = "<group>"; };
+		AC9FD035282CDD2500769ABD /* UniversalSDKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalSDKError.swift; sourceTree = "<group>"; };
 		ACC87D7827E438F5007B2123 /* UniversalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPI.swift; sourceTree = "<group>"; };
 		ACEDCD7128091700007B6D57 /* UniversalAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPIConfiguration.swift; sourceTree = "<group>"; };
 		ACEDCD7328091712007B6D57 /* UniversalAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAPIClient.swift; sourceTree = "<group>"; };
@@ -82,6 +96,7 @@
 		AC35F9AD27D1C366007D0A84 /* UniversalSDKSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AC9FD034282CDCFC00769ABD /* General */,
 				ACF15273281299E7007AA088 /* IAP */,
 				ACEDCD7028091673007B6D57 /* Utils */,
 				ACEDCD6F28091668007B6D57 /* Login */,
@@ -89,6 +104,14 @@
 				AC35F9AE27D1C366007D0A84 /* UniversalSDKSwift.h */,
 			);
 			path = UniversalSDKSwift;
+			sourceTree = "<group>";
+		};
+		AC9FD034282CDCFC00769ABD /* General */ = {
+			isa = PBXGroup;
+			children = (
+				AC9FD035282CDD2500769ABD /* UniversalSDKError.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		ACC87D7727E437E9007B2123 /* API */ = {
@@ -104,6 +127,10 @@
 		ACEDCD6F28091668007B6D57 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				AC9FD02B2829FCFC00769ABD /* UniversalLogin.swift */,
+				AC33286228348270002A06F2 /* LoginResult.swift */,
+				AC33286428348285002A06F2 /* SDKLoginResult.swift */,
+				AC332866283482A2002A06F2 /* LoginProfile.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -113,6 +140,8 @@
 			children = (
 				ACEDCD75280917C9007B6D57 /* LoginType.swift */,
 				ACEDCD7728091879007B6D57 /* UniversalUtils.swift */,
+				AC9FD0272829F91900769ABD /* UniversalEnumType.swift */,
+				AC9FD02F282CBD2800769ABD /* JSONConverter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -249,8 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9FD0282829F91900769ABD /* UniversalEnumType.swift in Sources */,
+				AC33286528348285002A06F2 /* SDKLoginResult.swift in Sources */,
+				AC9FD02C2829FCFC00769ABD /* UniversalLogin.swift in Sources */,
+				AC9FD030282CBD2800769ABD /* JSONConverter.swift in Sources */,
+				AC332867283482A2002A06F2 /* LoginProfile.swift in Sources */,
 				AC8EF8E8281BAEE5009D7450 /* IAPManager.swift in Sources */,
 				ACEDCD7828091879007B6D57 /* UniversalUtils.swift in Sources */,
+				AC9FD036282CDD2500769ABD /* UniversalSDKError.swift in Sources */,
+				AC33286328348270002A06F2 /* LoginResult.swift in Sources */,
 				ACC87D7927E438F5007B2123 /* UniversalAPI.swift in Sources */,
 				ACEDCD76280917C9007B6D57 /* LoginType.swift in Sources */,
 				ACEDCD7428091712007B6D57 /* UniversalAPIClient.swift in Sources */,
